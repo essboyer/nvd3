@@ -325,6 +325,10 @@ svg .title {
 *  Pie Chart
 */
 
+.nv-pie {
+    margin: 2%;
+}
+
 .nvd3.nv-pie path {
   stroke-opacity: 0;
   transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
