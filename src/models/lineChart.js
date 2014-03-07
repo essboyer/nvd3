@@ -276,7 +276,7 @@ nv.models.lineChart = function() {
 
           var xValue = xAxis.tickFormat()(chart.x()(singlePoint,pointIndex));
           interactiveLayer.tooltip
-                  .position({left: pointXLocation + margin.left, top: e.mouseY + margin.top})
+                  .position({left: pointXLocation + margin.left, top: e.mouseY + (margin.top - 30)})
                   .chartContainer(that.parentNode)
                   .enabled(tooltips)
                   .valueFormatter(function(d,i) {

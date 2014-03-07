@@ -368,7 +368,7 @@ nv.models.multiBarChart = function() {
   //------------------------------------------------------------
 
   multibar.dispatch.on('elementMouseover.tooltip', function(e) {
-    e.pos = [e.pos[0] +  margin.left, e.pos[1] + margin.top];
+    e.pos = [e.pos[0] +  margin.left, e.pos[1] + (margin.top - 30)];
     dispatch.tooltipShow(e);
   });
 
