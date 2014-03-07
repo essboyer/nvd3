@@ -2381,7 +2381,7 @@ nv.models.legend = function() {
                 nodeTextLength = nv.utils.calcApproxTextWidth(legendText);
               }
 
-              seriesWidths.push(nodeTextLength + 28); // 28 is ~ the width of the circle plus some padding
+              seriesWidths.push(nodeTextLength + 40); // 28 is ~ the width of the circle plus some padding
             });
 
         var seriesPerRow = 0;
