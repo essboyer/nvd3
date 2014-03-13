@@ -276,7 +276,7 @@ nv.models.lineChart = function() {
 
           var xValue = xAxis.tickFormat()(chart.x()(singlePoint,pointIndex));
           interactiveLayer.tooltip
-                  .position({left: pointXLocation + margin.left, top: e.mouseY + (margin.top - 30)})
+                  .position({left: pointXLocation + margin.left, top: e.mouseY + (margin.top + 300)})
                   .chartContainer(that.parentNode)
                   .enabled(tooltips)
                   .valueFormatter(function(d,i) {
@@ -329,7 +329,7 @@ nv.models.lineChart = function() {
   //------------------------------------------------------------
 
   lines.dispatch.on('elementMouseover.tooltip', function(e) {
-    e.pos = [e.pos[0] +  margin.left, e.pos[1] + margin.top];
+    e.pos = [e.pos[0] +  margin.left, e.pos[1] + (margin.top - 30)];
     dispatch.tooltipShow(e);
   });
 
